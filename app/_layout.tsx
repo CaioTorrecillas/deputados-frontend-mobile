@@ -1,4 +1,3 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
@@ -13,7 +12,6 @@ export default function RootLayout() {
 
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
         
         <View style={styles.container}>
           
@@ -27,7 +25,6 @@ export default function RootLayout() {
         </View>
 
         <StatusBar style="auto" />
-      </ThemeProvider>
     </GestureHandlerRootView>
   );
 }

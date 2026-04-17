@@ -5,6 +5,7 @@ import { API_BASE_URL } from "./api";
  */
 export async function getDeputadosPorUf(uf: string) {
   
+  console.log("API",API_BASE_URL)
   try {
     const response = await fetch(
       `${API_BASE_URL}/deputados/estado/${uf}`
