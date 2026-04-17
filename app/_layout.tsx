@@ -6,7 +6,7 @@ import 'react-native-reanimated';
 
 import { useColorScheme } from '@/hooks/use-color-scheme';
 import { GestureHandlerRootView } from "react-native-gesture-handler";
-import Footer from "../components/Footer/index";
+import Footer from "../src/components/Footer/index";
 
 export default function RootLayout() {
   const colorScheme = useColorScheme();
